@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "applefix",
+  "version": "${version}",
+  "name": "AppleFix",
+  "description": "Fixes things that misbehave on macOS: trackpad scrolling no longer races across the hotbar, menus scroll with momentum again, Command + Q can drop a whole stack, and mods that open a file picker (like Scribble's book save and load buttons) no longer crash the game. Quitting the game no longer hangs for 15 seconds or shows a false crash report when a mod leaves background threads running, and leaving a world with Distant Horizons no longer freezes the game for seconds. Adds reverse scrolling and a scroll lock while attacking on every system.",
+  "authors": [
+    "Jahel Cuadrado"
+  ],
+  "contact": {
+    "homepage": "https://github.com/JahelCuadrado/apple-fix",
+    "sources": "https://github.com/JahelCuadrado/apple-fix",
+    "issues": "https://github.com/JahelCuadrado/apple-fix/issues"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "modmenu": [
+      "com.einsteinmods.applefix.settings.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "applefix.mixins.json"
+  ],
+  "accessWidener": "applefix.classtweaker",
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25"
+  },
+  "recommends": {
+    "modmenu": "*"
+  },
+  "breaks": {
+    "macos_input_fixes": "*"
+  }
+}

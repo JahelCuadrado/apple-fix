@@ -1,0 +1,26 @@
+{
+  "required": true,
+  "package": "com.einsteinmods.applefix.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "AbstractContainerScreenMixin",
+    "ClientLanguageMixin",
+    "ControlsScreenMixin",
+    "MainMixin",
+    "DistantHorizonsBeaconMixin",
+    "DistantHorizonsExecutorMixin",
+    "DistantHorizonsThrottleMixin",
+    "MinecraftMixin",
+    "OptionsMixin",
+    "RenderSystemMixin",
+    "SDLDialogMixin",
+    "SDLEventHandlerMixin",
+    "WindowMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
