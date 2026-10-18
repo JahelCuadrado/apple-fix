@@ -13,6 +13,7 @@
     "issues": "https://github.com/JahelCuadrado/apple-fix/issues"
   },
   "license": "MIT",
+  "icon": "assets/applefix/icon.png",
   "environment": "client",
   "entrypoints": {
     "modmenu": [
